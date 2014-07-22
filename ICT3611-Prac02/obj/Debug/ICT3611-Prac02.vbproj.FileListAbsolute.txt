@@ -1,0 +1,10 @@
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\bin\Debug\ICT3611-Prac02.exe.config
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\bin\Debug\ICT3611-Prac02.exe
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\bin\Debug\ICT3611-Prac02.pdb
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\bin\Debug\ICT3611-Prac02.xml
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\obj\Debug\ICT3611_Prac02.Prac02.resources
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\obj\Debug\ICT3611_Prac02.Resources.resources
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\obj\Debug\ICT3611-Prac02.vbproj.GenerateResource.Cache
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\obj\Debug\ICT3611-Prac02.exe
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\obj\Debug\ICT3611-Prac02.xml
+C:\Users\Micro\Documents\GitHub\ICT3611-Prac02\ICT3611-Prac02\obj\Debug\ICT3611-Prac02.pdb
