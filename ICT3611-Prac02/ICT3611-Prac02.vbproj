@@ -70,6 +70,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TaxCalc.vb" />
+    <Compile Include="TestTaxCalc.vb" />
     <Compile Include="Prac02.vb">
       <SubType>Form</SubType>
     </Compile>

@@ -19,38 +19,26 @@
             prs.surname = txtSurname.Text
             prs.Salaray = Double.Parse(txtSalary.Text)
 
-            If (rdbSimpleTax.Checked) Then
-                taxAmount = 0.35 * prs.Salaray
-            Else
-                Dim tmpSalary As Double = prs.Salaray
-                Dim complexTaxPortionsPerc As Double() = {25, 22, 18, 12}
-                Dim complexTaxPortionsAmount As Integer() = {20000, 10000, 10000}
-                Dim count As Integer = 0
+            taxAmount = calcTax(prs, rdbSimpleTax.Checked)
 
-                While (tmpSalary > 0)
-
-                    If (count < 3) Then
-                        If (tmpSalary > complexTaxPortionsAmount(count)) Then
-                            taxAmount += complexTaxPortionsAmount(count) * (complexTaxPortionsPerc(count) / 100.0)
-                            tmpSalary -= complexTaxPortionsAmount(count)
-                        Else
-                            taxAmount += (tmpSalary * (complexTaxPortionsPerc(count) / 100.0))
-                            tmpSalary = 0
-                        End If
-
-                    Else
-                        taxAmount += (tmpSalary * (complexTaxPortionsPerc(count) / 100.0))
-                        tmpSalary = 0
-                    End If
-
-                    count += 1
-
-                End While
-
-            End If
             MsgBox(prs.name + " " + prs.surname + ",you are liable for R" + taxAmount.ToString() + " in taxes.")
         End If
     End Sub
+
+    Public Function calcTax(_prs As Person, ByVal simpleCalc As Boolean) As Double
+
+        Dim _taxAmount As Double = 0.0
+
+        If (simpleCalc) Then
+
+            _taxAmount = simpleTaxCalc(_prs.Salaray)
+        Else
+            _taxAmount = complexTaxCalc(_prs.Salaray)
+        End If
+
+        Return _taxAmount
+
+    End Function
 
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
         Close()
